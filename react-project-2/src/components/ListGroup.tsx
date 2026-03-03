@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import { MouseEvent } from "react";
 
 function ListGroup() 
 {
@@ -12,6 +13,18 @@ function ListGroup()
     // second list for condition inside return
     let items2 = ['apple', 'mango', 'pineapple'];
 
+    //event handler
+    const handleClick=(event: MouseEvent) => console.log(event);
+
+    let selectedIndex=0;
+
+
+    //hook
+    const [selectedIndexHook , setSelectedIndex] = useState(-1);
+    //const arr=useState(-1);
+   // arr[0] //selectedindex
+    //arr[1] //updated function
+    //const[name, setName]=useState('');
     return (
         // use <Fragment></Fragment> or <></> or <div></div>
 
@@ -69,7 +82,7 @@ function ListGroup()
 
             <br />
 
-            {/* ---------------- Condition Inside Return - LIST ---------------- */}
+            {/* ---------------- Condition Rendering Inside Return - LIST ---------------- */}
 
             <h1>Condition Inside the Return - LIST</h1>
 
@@ -77,13 +90,85 @@ function ListGroup()
             {items2.length === 0 ? <p>No Item Found</p> : null}
 
             <ul className="list-group">
-                {items2.map((item) => (
-                    <li key={item} className="list-group-item">
+                {items2.map((item,index) => (
+                    <li key={item} className="list-group-item" onClick={() => alert("clicked at " + index + ' -> item -> ' + item )}>
                         {item}
                     </li>
                 ))}
             </ul>
 
+            <br></br>
+
+            <ul className="list-group">
+                <h1>Using Item and index</h1>
+                {items.map((item,index) => (
+                    <li key={item} className="list-group-item" onClick={() => console.log(item,index)}>
+                        {item}
+                    </li>
+                ))}
+            </ul>
+
+
+                   <br></br>
+                   
+            {/*Handling events */}
+              <ul className="list-group">
+                <h1>Handling events</h1>
+                {items.map((item,index) => (
+                    <li key={item} className="list-group-item" onClick={(event) => console.log(event)}>
+                        {item}
+                    </li>
+                ))}
+            </ul>
+
+            <br></br>
+
+
+            {/*Handling events using mouse event */}
+              <ul className="list-group">
+                <h1>Handling events using mouse event</h1>
+                {items.map((item,index) => (
+                    <li key={item} className="list-group-item" onClick={handleClick}>
+                        {item}
+                    </li>
+                ))}
+            </ul>
+
+
+            <br></br>
+
+
+               {/*Managing State with index */}
+            <ul className="list-group">
+                <h1>Managing State</h1>
+                {items.map((item,index) => (
+                    <li 
+                    className={selectedIndex === index ? 'list-group-item active' : 'list-group-item' } 
+                    onClick={handleClick}
+                    key={item} 
+                    >
+                        {item}
+                    </li>
+                ))}
+            </ul>
+
+
+             <br></br>
+
+             {/*Managing State with index */}
+              <ul className="list-group">
+                <h1>Managing State</h1>
+                {items.map((item,index) => (
+                    <li 
+                    className={selectedIndexHook === index ? 'list-group-item active' : 'list-group-item' } 
+                    key={item}
+                    onClick={() => {setSelectedIndex(index); }}
+                     
+                    >
+                        {item}
+                    </li>
+                ))}
+            </ul>
         </Fragment>
     );
 }
