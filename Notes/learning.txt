@@ -1,0 +1,274 @@
+react-learning/
+│
+├── 00_programming_fundamentals/        (Optional – For absolute beginners)
+│   how_web_works.md
+│   http_basics.md
+│   client_vs_server.md
+│   browser_dom.md
+│   what_is_api.md
+│
+├── 01_javascript_core/                 (MUST before React)
+│   variables_let_const.js
+│   data_types.js
+│   operators.js
+│   conditionals.js
+│   loops.js
+│   functions_basics.js
+│   scope_and_hoisting.js
+│   closures.js
+│   objects_basics.js
+│   arrays_basics.js
+│
+├── 02_javascript_advanced/             (Very Important for React)
+│   arrow_functions.js
+│   template_literals.js
+│   destructuring.js
+│   spread_rest_operator.js
+│   optional_chaining.js
+│   nullish_coalescing.js
+│   array_methods_map_filter_reduce.js
+│   array_methods_find_some_every.js
+│   immutability_concepts.js
+│   object_and_array_copying.js
+│   modules_import_export.js
+│   promises.js
+│   async_await.js
+│   event_loop.js
+│   debounce_throttle.js
+│
+├── 03_modern_javascript_patterns/
+│   pure_functions.js
+│   higher_order_functions.js
+│   currying.js
+│   composition.js
+│
+├── 04_react_setup/
+│   what_is_react.md
+│   why_react.md
+│   virtual_dom.md
+│   reconciliation.md
+│   spa_vs_mpa.md
+│   csr_vs_ssr.md
+│   install_node.md
+│   create_vite_app.md
+│   create_next_app.md
+│   project_structure.md
+│   npm_basics.md
+│   yarn_pnpm.md
+│
+├── 05_jsx/
+│   what_is_jsx.jsx
+│   jsx_rules.jsx
+│   embedding_jsx.jsx
+│   jsx_expressions.jsx
+│   fragments.jsx
+│   rendering_elements.jsx
+│
+├── 06_components/
+│   function_components.jsx
+│   component_structure.jsx
+│   nesting_components.jsx
+│   exporting_importing.jsx
+│   reusable_components.jsx
+│   component_composition.jsx
+│   presentational_vs_container.jsx
+│
+├── 07_props/
+│   passing_props.jsx
+│   destructuring_props.jsx
+│   default_props.jsx
+│   children_prop.jsx
+│   prop_types.jsx
+│   props_vs_state.md
+│
+├── 08_state/
+│   useState_basics.jsx
+│   updating_state.jsx
+│   state_batching.jsx
+│   state_with_objects.jsx
+│   state_with_arrays.jsx
+│   functional_updates.jsx
+│   lifting_state_up.jsx
+│
+├── 09_events/
+│   click_events.jsx
+│   input_events.jsx
+│   form_submit.jsx
+│   controlled_components.jsx
+│   uncontrolled_components.jsx
+│   event_object.jsx
+│   synthetic_events.jsx
+│
+├── 10_conditional_rendering/
+│   if_else_rendering.jsx
+│   ternary_rendering.jsx
+│   logical_and.jsx
+│   switch_rendering.jsx
+│   conditional_components.jsx
+│
+├── 11_lists_and_keys/
+│   map_rendering.jsx
+│   keys_importance.jsx
+│   rendering_dynamic_data.jsx
+│   list_performance.md
+│
+├── 12_useEffect/
+│   useEffect_basics.jsx
+│   dependency_array.jsx
+│   cleanup_function.jsx
+│   fetching_data.jsx
+│   lifecycle_simulation.jsx
+│   infinite_loop_mistakes.jsx
+│
+├── 13_forms_advanced/
+│   multiple_inputs.jsx
+│   dynamic_forms.jsx
+│   validation_basic.jsx
+│   custom_validation.jsx
+│   form_libraries_intro.md
+│   react_hook_form.jsx
+│
+├── 14_routing/
+│   install_react_router.md
+│   basic_routes.jsx
+│   route_params.jsx
+│   nested_routes.jsx
+│   layout_routes.jsx
+│   useNavigate.jsx
+│   useLocation.jsx
+│   protected_routes.jsx
+│   lazy_loaded_routes.jsx
+│
+├── 15_context_api/
+│   create_context.jsx
+│   provider.jsx
+│   useContext.jsx
+│   avoiding_prop_drilling.md
+│   global_state_example.jsx
+│   context_performance.md
+│
+├── 16_custom_hooks/
+│   what_are_hooks.md
+│   rules_of_hooks.md
+│   creating_custom_hook.jsx
+│   reusable_logic.jsx
+│   useLocalStorage_hook.jsx
+│
+├── 17_api_calls/
+│   fetch_api.jsx
+│   axios_example.jsx
+│   loading_states.jsx
+│   error_handling.jsx
+│   authentication_tokens.jsx
+│   interceptors.jsx
+│   cancel_requests.jsx
+│
+├── 18_performance/
+│   rendering_process.md
+│   useMemo.jsx
+│   useCallback.jsx
+│   React_memo.jsx
+│   memoization_strategies.md
+│   lazy_loading.jsx
+│   suspense.jsx
+│   code_splitting.jsx
+│   virtualization.jsx
+│
+├── 19_advanced_state_management/
+│   useReducer.jsx
+│   reducer_patterns.jsx
+│   redux_intro.md
+│   redux_toolkit_basics.jsx
+│   middleware.md
+│   zustand_intro.md
+│   recoil_intro.md
+│
+├── 20_refs/
+│   useRef_basics.jsx
+│   accessing_dom.jsx
+│   forwardRef.jsx
+│   useImperativeHandle.jsx
+│
+├── 21_portals/
+│   create_portal.jsx
+│   modal_example.jsx
+│   tooltip_example.jsx
+│
+├── 22_error_boundaries/
+│   error_boundary_class.jsx
+│   handling_runtime_errors.jsx
+│   fallback_ui_patterns.jsx
+│
+├── 23_testing/
+│   jest_intro.md
+│   react_testing_library.jsx
+│   component_testing.jsx
+│   mocking_api_calls.jsx
+│   integration_testing.jsx
+│
+├── 24_typescript_with_react/
+│   ts_setup.md
+│   typing_props.tsx
+│   typing_state.tsx
+│   typing_hooks.tsx
+│   generics_in_react.tsx
+│
+├── 25_styling/
+│   css_basics.md
+│   css_modules.jsx
+│   styled_components.jsx
+│   tailwind_with_react.jsx
+│   sass_setup.md
+│
+├── 26_accessibility/
+│   aria_attributes.md
+│   keyboard_navigation.md
+│   semantic_html.md
+│
+├── 27_security/
+│   xss_protection.md
+│   safe_rendering.md
+│   environment_variables.md
+│   secure_authentication_patterns.md
+│
+├── 28_react_18_features/
+│   concurrent_rendering.md
+│   automatic_batching.md
+│   startTransition.jsx
+│   useDeferredValue.jsx
+│
+├── 29_nextjs_introduction/
+│   what_is_nextjs.md
+│   file_based_routing.md
+│   ssr_ssg_isr.md
+│   api_routes.md
+│
+├── 30_project_structure_best_practices/
+│   folder_structure.md
+│   feature_based_structure.md
+│   reusable_patterns.md
+│   clean_architecture_react.md
+│
+├── 31_dev_tools/
+│   react_devtools.md
+│   debugging_patterns.md
+│   eslint_prettier_setup.md
+│   husky_precommit.md
+│
+├── 32_deployment/
+│   build_process.md
+│   env_configs.md
+│   deploy_vercel.md
+│   deploy_netlify.md
+│   dockerizing_react.md
+│
+├── 33_real_world_projects/
+│   todo_app/
+│   weather_app/
+│   authentication_app/
+│   dashboard_app/
+│   ecommerce_ui/
+│   blog_platform/
+│   admin_panel/
+│
+└── README.md
